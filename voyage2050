@@ -54,6 +54,15 @@ pipeline {
         }
       }
     }
+    stage('build'){
+      steps{
+        script {
+          echo "Checking de la coque"
+          sleep 10
+          echo "Integrite de la coque a 100%"
+        }
+      }
+    }
     stage('Test'){
       steps{
         script {
