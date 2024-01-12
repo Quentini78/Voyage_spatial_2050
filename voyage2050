@@ -2,12 +2,55 @@ pipeline {
   agent any
   /*Declaration des etapes de contructions du Pipeline*/
   stages {
-    stage('build'){
+    stage('Embauche'){
       steps{
         script {
-          echo "Checking de la coque"
+          echo "Recherche d'un ingenieur"
+          sleep 5
+          echo "Ingenieur trouve"
+        }
+      }
+    }
+    stage('Chargement'){
+      steps{
+        script {
+          echo "Mise en place d'un nouveau systeme"
           sleep 10
-          echo "Integrite de la coque a 100%"
+          echo "Reduction du chargement des listes des vols"
+        }
+      }
+    }
+    stage('Promovoir'){
+      steps{
+        script {
+          echo "Pub pour les soldes d'ete"
+        }
+      }
+    }
+    stage('Maintenir'){
+      steps{
+        script {
+          echo "Checking des reservoirs"
+          sleep 10
+          echo "Concentration des reservoires maintenus"
+        }
+      }
+    }
+    stage('Reduire'){
+      steps{
+        script {
+          echo "Reduction de la vitesse"
+          sleep 10
+          echo "Consommation du carburant reduite"
+        }
+      }
+    }
+    stage('Mise a jour'){
+      steps{
+        script {
+          echo "Ecriture des nouvelles dates"
+          sleep 5
+          echo "Dates mises a jour"
         }
       }
     }
@@ -15,7 +58,7 @@ pipeline {
       steps{
         script {
           echo "Verification des equipements de navigation"
-          sleep 10
+          sleep 5
           echo "Leger disfonctionnement de la carte numerique"
         }
       }
@@ -24,7 +67,7 @@ pipeline {
       steps{
         script {
           echo "Verifications des eauipements de communication"
-          sleep 10
+          sleep 5
           echo "Test radio OK"
         }
       }
